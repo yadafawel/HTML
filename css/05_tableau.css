@@ -1,0 +1,47 @@
+*{
+    font-family: fantasy; /*l'étoile ou asterique sellectiontous les element de ma page html*/
+}
+body{ 
+    width: 90%;
+    margin: auto;
+}
+table{
+    border: 4px solid #0e0d0e;
+    border-collapse: collapse; /*par deéfaut la bordeur  contien 2 trait, pour que le tirait soit unique on utilisse le proprieter " collaps"*/
+    width: 70%;/*largeur de tableau parapor à son contenant donc ici au body /!\ ne pas oublier les regle de l'héritage en css*/
+    margin: 25px;/* marcage exterieur de la balise*/
+}
+
+
+thead, tfoot{
+    background-color: rgb(137, 218, 160);
+    border: 2px solid #298f95;
+}
+tbody{
+    border: 3px double #976f6f; /*pointille  ou dotid*/
+    
+    
+}
+th{
+    border: 4px dotted #131392;
+    padding: 4px;
+    background-color: rgb(206, 140, 60);
+    width: 25%;
+}
+td{
+    font-size: 100%;
+    border: 1px dotted #5c5c88 ;
+    padding: 5px; /*padding = marge intérieur*/
+    height: 50px;
+}
+td:first-child{
+    text-align: left;
+    background-color: rgb(213, 191, 157);
+
+}
+caption{
+    font-size: 30px;
+    color: rgb(88, 88, 47);
+    padding:0.5rem ;
+    background-color: rgb(183, 116, 116);
+}

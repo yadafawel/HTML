@@ -1,0 +1,10 @@
+.contenu{
+    height: 45em;/* hauteur */
+    width: 45em;/* largeur*/
+    margin: auto; /* centre autaumatiquement la balise*/
+
+    border-radius: 50%;  /* arrondie les angle*/
+   background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,111,53,1) 35%, rgba(0,212,255,1) 100%); /*dégrade qui démare avec la premiere couleur à droite et la dernier à gauche*/
+
+}

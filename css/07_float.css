@@ -1,0 +1,51 @@
+body{
+    margin:0 auto;
+    /* margin:0 auto 0 auto => haut droit droite bas gouche
+    margine : 0;
+    margine:0 auto 1;(gauche -<auto
+    */
+    background-color: antiquewhite;
+
+}
+div{
+    width: 90%;
+    margin: 5px auto;
+    background-color: lightblue;
+}
+p{
+    background-color: mediumaquamarine;
+    display: inline;
+}
+p span{
+    background-color: rgb(164, 164, 98);
+    /* salection les span contenu  dans des p */
+}
+.boite{
+    height: 12vh;
+    width: 15vh;
+    padding: 5vh;
+    background: url(../img/fire.jpg);
+    background-repeat: no-repeat;
+    border: 5px double rgb(203, 54, 198); 
+    margin: 2vh;
+    float: left; 
+/* effet flottant, permet de placer  des balises côte à côte  alors que selon le fleux du web standerd  les element ce placent les un au-desus des autre  */
+transition: margin 0.5s;
+    /* taille style couleur de la bordoure  */
+}
+
+
+/* https://outils-css.aliasdmc.fr/unites-de-longeur-css.php
+em: reletive to the paarent element
+rem: relative to root element (html tag)
+%: relative the parent element
+vh: relative to the viewport's height
+*/
+.boite:hover{
+    /* la pseudo-classe : hover modifie un affichage au survol de la souris */
+    margin-top: 10vh;
+}
+.clear{
+    clear: both;
+    /* suppirime l'effet floatent */
+}

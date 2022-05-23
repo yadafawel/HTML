@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="css/03_formulaire.css">
+
+    <title>Formulaire HTML</title>
+</head>
+<body>
+   <!--je déclare mon formulaire avec la balise form-->
+   <form action="">
+       <!-- deux maniere de déclarer le label -->
+       <!-- pseude -->
+       <label for="pseudo">
+           <!-- input dans la label -->
+           Pseudonyme
+       </label>
+       <input type="text" name="" id="" placeholder="example" required>
+       <!-- l'id combiné à for parmet de lier la label à l'inpur type présise la type données récoupérer name sera utiliser en php pour récoupérer les données, la place holder contien la text qui apparâit dans l'input required présise un navigateur que le que le champs est rensegner obligatoirement  -->
+<label for="mdp">
+    mots de passe <span title="le mot de passe peut contenir ...">*</span>
+</label>
+<input type="password" name="password" id="password">
+<br>
+<br>
+<!-- email -->
+<label for="email">email</label>
+<input type="email" name="email" id="email" placeholder="votre maiel">
+<label for="photo" aria-placeholder="you got to go">photo</label>
+<input type="file" name="photo" id="photo">
+<br>
+<br>
+ <fieldset>
+     <legend>choix multiple</legend>
+   
+    
+    <label for="q1">quel distination choisiser vous </label>
+    <p>
+  <input type="checkbox" name="response01" id="q1">italie
+  <input type="checkbox" name="response02" id="q1">franc
+  <input type="checkbox" name="response03" id="q1">belg
+  </p>
+  <br>
+  <!-- case à cocher radio -->
+  <input type="radio" id="q2" name="reponse1"   >en famille
+  <input type="radio" id="q2" name="reponse1"  > brender
+</fieldset>
+<br>
+<label for="commentare">commentaire</label>
+<br>
+<textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="say something on your mind"></textarea>   
+<!-- row= nombre de ligne - cols= nombrre de colonnes/ caractaires -->
+<input type="submit" name="inscription" value="envoiyer">
+<!-- boutton envoi de formulaire -->
+<input type="reset" name="annuler" value="annuler">
+<!-- boutton pour vider le formulaire -->
+<br>
+ <a href="https://developer.mozilla.org/fr/" target="_blank">petite decumantation</a>
+ <br>
+ <a href="https://www.w3schools.com/">w3schools </a>
+</form>
+
+
+</body>
+</html>

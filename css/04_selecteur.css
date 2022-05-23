@@ -1,0 +1,63 @@
+body{
+    float: left;
+    width: 190px;
+    color: blue;
+    background-color: rgb(197, 221, 221); /* couleur de fond */
+    color: white;/* couleur de text*/
+}
+section p{
+    color: beige; /* tout les <p> à l'interieur  de la balise section*/
+    font-size: x-large;
+}
+section p:first-child{
+    color: blueviolet;
+}
+section p:last-child{
+    color: rgb(117, 92, 92);/* derniere p dans la selection */
+}
+section p:nth-child(even){
+    color: hotpink; /* numero de l'enfant en paire */
+}
+section p:nth-child(odd){
+    color: lightseagreen; /*  numero de l'enfant en inpaire */
+}
+section p:nth-child(3), section p:nth-child(10){
+    color: orange;
+    background-color: blue;
+}
+.zone1{
+    color: yellowgreen;
+    font-size: 50px;
+    background-color: black;
+}
+.zone2{
+    color: thistle;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: black;
+.lime{
+    color: burlywood;
+    font-size: 20px;
+}
+#zone3{
+    /* id je met # avant sont nom  */
+    background-color: rgb(6, 8, 12);
+}
+#zone3::before{ 
+    /* r'ajouté contenu avant l'id zone3 */
+    content: "rajouter avant "; content est obligtoire, le contenu ne s'affiche pas dans l'html => attention accecibiliter, on peut le lesser vide on peut même r'ajouter
+}
+#zone3::after{
+    content: rajoute moi apres;
+}
+li:nth-of-type(2){
+    background-color: rgb(18, 16, 16);
+    color: white;
+}
+.zone4 span{
+    font-size: 400px;
+}
+/* sellection span qui n'a pas pas de class saulement lui pour appliquer du style (pas le droit de toucher au html)  */
+span:not(.lime){
+    font-weight: bold;
+}

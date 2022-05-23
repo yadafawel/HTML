@@ -1,0 +1,32 @@
+*{    font-family: 'Macondo', cursive;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Oleo Script Swash Caps', cursive;
+
+    font-family: 'Roboto Slab', serif;
+    background-color: beige;
+
+}
+ul, li{
+    font-size: medium;
+    background-color: blue;
+}
+.lorem{
+    font-size: bold;
+    font-family: initial;
+    background-color: black;
+    color: white;
+}
+a{
+    font-size: x-large;
+    color:black;
+    background-color: white;
+}
+.bud{
+    width: 500px;
+    border-radius: 50px;
+    background-color: black;
+    height: 50px;
+    
+}

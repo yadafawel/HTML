@@ -1,0 +1,43 @@
+body{
+    float: left;
+    width: 190px;
+    color: blue;
+    background-color: rgb(81, 113, 113); /* couleur de fond */
+    color: white;/* couleur de text*/
+}
+section p{
+    color: beige; /* tout les <p> à l'interieur  de la balise section*/
+}
+section p:first-child{
+    color: blueviolet;
+}
+section p:last-child{
+    color: rgb(117, 92, 92);/* derniere p dans la selection */
+}
+section p:nth-child(even){
+    color: hotpink; /* numero de l'enfant en paire */
+}
+section p:nth-child(odd){
+    color: lightseagreen; /*  numero de l'enfant en inpaire */
+}
+section p:nth-child(3), section p:nth-child(10){
+    color: orange;
+}
+.zone1{
+    color: yellowgreen;
+}
+.zone2{
+    color: thistle;
+    font-family: 'Times New Roman', Times, serif;
+}
+.lime{
+    color: burlywood;
+}
+#zone3{
+    /* id je met # avant sont nom  */
+    background-color: cornflowerblue;
+}
+#zone3::before{ 
+    /* r'ajouté contenu avant l'id zone3 */
+    content: "rajouter avant "; content est obligtoire, le contenu ne s'affiche pas dans l'html => attention accecibiliter, on peut le lesser vide on peut même r'ajouter
+}
